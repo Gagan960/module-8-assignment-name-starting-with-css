@@ -1,0 +1,20 @@
+ <!-- 2. Build an HTML page with multiple paragraphs, each assigned a unique class name. Write
+ CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM
+ naming convention and explain how you've named the classes -->
+<!DOCTYPE html>
+ <html lang='en'>
+ <head>
+ <style>
+  .text-block__para--intro { color: blue; font-size: 18px; }
+  .text-block__para--highlight { color: red; font-weight: bold; }
+  .text-block__para--note { color: green; font-style: italic; }
+ </style>
+ </head>
+ <body>
+  <p class='text-block__para--intro'>This is the introduction paragraph.</p>
+  <p class='text-block__para--highlight'>This is a highlighted paragraph.</p>
+  <p class='text-block__para--note'>This is a note paragraph.</p>
+ </body>
+ </html>
+ // BEM Naming Explanation:
+ // Block: text-block, Element: para, Modifiers: intro, highlight, note.

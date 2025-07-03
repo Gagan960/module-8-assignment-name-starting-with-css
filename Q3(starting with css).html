@@ -1,0 +1,40 @@
+<!-- 3. Develop an HTML form with various input elements. Use CSS to style the form, including
+ setting background colors for input fields. Create a custom color palette for the form
+ elements, and demonstrate how to apply opacity to one of the form sections. -->
+ 
+ <!DOCTYPE html>
+ <html lang='en'>
+ <head>
+ <style>
+  :root {
+    --main-bg: #f0f8ff;
+    --input-bg: #d1e7dd;
+    --accent: #0d6efd;
+  }
+  form {
+    background-color: var(--main-bg);
+    padding: 20px;
+  }
+  input, select {
+    background-color: var(--input-bg);
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .form-section {
+    opacity: 0.6;
+  }
+ </style>
+ </head>
+ <body>
+  <form>
+    <div class='form-section'>
+      <label>Name:</label>
+      <input type='text'><br>
+      <label>Email:</label>
+      <input type='email'><br>
+      <label>Gender:</label>
+      <select><option>Male</option><option>Female</option></select>
+    </div>
+  </form>
+ </body>
+ </html>

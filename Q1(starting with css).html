@@ -1,0 +1,22 @@
+ <!-- 1. Create a simple page with some div tags and show different ways to add CSS as well as
+ what happens when you target the same elements with inline, internal, and external CSS.
+ Also, utilize comments in the project where required -->
+
+ 
+ <!DOCTYPE html>
+ <html lang='en'>
+ <head>
+  <meta charset='UTF-8'>
+  <title>CSS Priority</title>
+  <style>
+    /* Internal CSS */
+    .box { background-color: yellow; color: black; }
+  </style>
+  <link rel='stylesheet' href='styles.css'> <!-- External CSS -->
+ </head>
+ <body>
+  <div class='box' style='background-color: red;'>This is a div with inline, internal, and external
+ CSS.</div>
+ </body>
+ </html>
+ // Explanation: Inline CSS takes the highest priority, followed by internal, then external CSS
